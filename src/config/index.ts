@@ -6,4 +6,5 @@ dotenv.config({ path: path.join(process.cwd(), '.env') })
 export default {
   prot: process.env.PORT,
   database_url: process.env.MONGO_URL,
+  default_student_pass: process.env.DEFAULT_STUDENT_PASS,
 }
