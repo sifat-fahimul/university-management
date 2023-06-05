@@ -1,40 +1,50 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\.307bc2373857fef141368122ccce3f9720df0d6c-audit.json",
-  "files": [
-    {
-      "date": 1685871365867,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-15-success.log",
-      "hash": "7dbb47f6713b24c3c11bf9e904b66cfa9daee2d5ee3de585e653b3c72dacdb08"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1685873090957,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-16-success.log",
-      "hash": "fe60a251c929dc5eca18bb2ac0b0f043a604a6162231880800da6c218cd853e5"
-    },
-    {
-      "date": 1685877837571,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-17-success.log",
-      "hash": "b247b86b46c47f4c5f1fd85845ae47c5e850fe2f383f7738773e28964d3cccd0"
-    },
-    {
-      "date": 1685880262276,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-18-success.log",
-      "hash": "dc1fbb380ca4d66a5b374da9f715b20487fe3821d7fd945a5b82ad57449294a7"
-    },
-    {
-      "date": 1685936020038,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-09-success.log",
-      "hash": "54666828f3034f32386ae7c508683c5b3a00e2bd25f3edc476079ce97a3536da"
-    },
-    {
-      "date": 1685937607567,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-10-success.log",
-      "hash": "8cc4a79c7774d008d44a9f4b42f614fb0d9695d1252b571a2e0b5a4034f04f01"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\.307bc2373857fef141368122ccce3f9720df0d6c-audit.json",
+    "files": [
+        {
+            "date": 1685871365867,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-15-success.log",
+            "hash": "7dbb47f6713b24c3c11bf9e904b66cfa9daee2d5ee3de585e653b3c72dacdb08"
+        },
+        {
+            "date": 1685873090957,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-16-success.log",
+            "hash": "fe60a251c929dc5eca18bb2ac0b0f043a604a6162231880800da6c218cd853e5"
+        },
+        {
+            "date": 1685877837571,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-17-success.log",
+            "hash": "b247b86b46c47f4c5f1fd85845ae47c5e850fe2f383f7738773e28964d3cccd0"
+        },
+        {
+            "date": 1685880262276,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-18-success.log",
+            "hash": "dc1fbb380ca4d66a5b374da9f715b20487fe3821d7fd945a5b82ad57449294a7"
+        },
+        {
+            "date": 1685936020038,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-09-success.log",
+            "hash": "54666828f3034f32386ae7c508683c5b3a00e2bd25f3edc476079ce97a3536da"
+        },
+        {
+            "date": 1685937607567,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-10-success.log",
+            "hash": "8cc4a79c7774d008d44a9f4b42f614fb0d9695d1252b571a2e0b5a4034f04f01"
+        },
+        {
+            "date": 1685941510638,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-11-success.log",
+            "hash": "5f846a2d052756b8d37f44cdfbe11c373ffe110045a558b4d600f06535fcfca7"
+        },
+        {
+            "date": 1685946933198,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-12-success.log",
+            "hash": "533c2daf79392343bdea5f5b8d1751a4d36966972da68301cdcbd5b1f0015595"
+        }
+    ],
+    "hashType": "sha256"
 }
