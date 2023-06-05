@@ -1,6 +1,5 @@
 import express, { Application } from 'express';
 import cors from 'cors';
-
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import { UserRouter } from './app/modules/user/user.route';
 // import ApiError from './errors/ApiError';
@@ -18,10 +17,10 @@ app.use('/api/v1/users/', UserRouter);
 // global error handler
 app.use(globalErrorHandler);
 
-// // testing
-// app.get('/', async (req: Request, res: Response) => {
-//   // throw new ApiError(400, 'ohh hooo error');
-//   Promise.reject(new Error('Unhandled request error'));
+// testing
+// app.get('/', (req, res, next) => {
+//   throw new ApiError(400, 'ohh hooo error');
+//   // console.log(x);
 // });
 
 export default app;

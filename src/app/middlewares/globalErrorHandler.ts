@@ -12,7 +12,7 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
     : errorLogger.error('globalErrorHandler', err);
 
   let statusCode = 500;
-  let message = 'some went wrong';
+  let message = 'something went wrong';
   let errorMessage: IGenericErrorMessage[] = [];
 
   if (err?.name === 'ValidationError') {

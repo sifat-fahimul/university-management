@@ -3,8 +3,14 @@ import app from './app';
 import config from './config';
 import { logger, errorLogger } from './shared/logger';
 import { Server } from 'http';
+
+process.on('uncaughtException', err => {
+  errorLogger.error(err);
+  process.exit(1);
+});
+
+let server: Server;
 async function bootstrap() {
-  let server: Server;
   try {
     await mongoose.connect(config.database_url as string);
     logger.info('Database connected');
@@ -16,7 +22,6 @@ async function bootstrap() {
   }
 
   process.on('unhandledRejection', err => {
-    console.log('unhandledRejection detected:');
     if (server) {
       server.close(() => {
         errorLogger.error(err);
@@ -29,3 +34,10 @@ async function bootstrap() {
 }
 
 bootstrap();
+
+process.on('SIGTERM', () => {
+  logger.info('SIGTERM: is received');
+  if (server) {
+    server.close();
+  }
+});
