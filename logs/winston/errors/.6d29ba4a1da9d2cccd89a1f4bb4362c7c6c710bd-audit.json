@@ -54,6 +54,11 @@
             "date": 1686024587087,
             "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\errors\\phu-2023-06-06-10-error.log",
             "hash": "3cb36d67bf515a2317237dfd43beb2fc3448be9b2c292bd7a783f2191e210f8c"
+        },
+        {
+            "date": 1686027846444,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\errors\\phu-2023-06-06-11-error.log",
+            "hash": "ec561aa65ae77eb6280835809545628617dc3968de5318c72f4347cf67d0464c"
         }
     ],
     "hashType": "sha256"
