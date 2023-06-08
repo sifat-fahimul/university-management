@@ -2,6 +2,7 @@ import express, { Application } from 'express';
 import cors from 'cors';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import routers from './app/routes';
+import httpStatus from 'http-status';
 const app: Application = express();
 
 app.use(cors());
@@ -23,5 +24,19 @@ app.use(globalErrorHandler);
 //   throw new ApiError(400, 'ohh hooo error');
 //   // console.log(x);
 // });
+
+app.use((req, res, next) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not Found!',
+    errorMessage: [
+      {
+        path: req.originalUrl,
+        message: 'Api route not found!',
+      },
+    ],
+  });
+  next();
+});
 
 export default app;
