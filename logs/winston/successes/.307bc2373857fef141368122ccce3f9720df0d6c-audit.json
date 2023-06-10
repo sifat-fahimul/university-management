@@ -1,105 +1,110 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\.307bc2373857fef141368122ccce3f9720df0d6c-audit.json",
-  "files": [
-    {
-      "date": 1685871365867,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-15-success.log",
-      "hash": "7dbb47f6713b24c3c11bf9e904b66cfa9daee2d5ee3de585e653b3c72dacdb08"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1685873090957,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-16-success.log",
-      "hash": "fe60a251c929dc5eca18bb2ac0b0f043a604a6162231880800da6c218cd853e5"
-    },
-    {
-      "date": 1685877837571,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-17-success.log",
-      "hash": "b247b86b46c47f4c5f1fd85845ae47c5e850fe2f383f7738773e28964d3cccd0"
-    },
-    {
-      "date": 1685880262276,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-18-success.log",
-      "hash": "dc1fbb380ca4d66a5b374da9f715b20487fe3821d7fd945a5b82ad57449294a7"
-    },
-    {
-      "date": 1685936020038,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-09-success.log",
-      "hash": "54666828f3034f32386ae7c508683c5b3a00e2bd25f3edc476079ce97a3536da"
-    },
-    {
-      "date": 1685937607567,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-10-success.log",
-      "hash": "8cc4a79c7774d008d44a9f4b42f614fb0d9695d1252b571a2e0b5a4034f04f01"
-    },
-    {
-      "date": 1685941510638,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-11-success.log",
-      "hash": "5f846a2d052756b8d37f44cdfbe11c373ffe110045a558b4d600f06535fcfca7"
-    },
-    {
-      "date": 1685946933198,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-12-success.log",
-      "hash": "533c2daf79392343bdea5f5b8d1751a4d36966972da68301cdcbd5b1f0015595"
-    },
-    {
-      "date": 1686023237969,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-06-06-09-success.log",
-      "hash": "7cbdebac11f7c6e0fc8614731f3766bd74d6110448831d96da5d9240a867c614"
-    },
-    {
-      "date": 1686024587076,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-06-06-10-success.log",
-      "hash": "0d7007ed88ff6554b9b2121cee73275f9610535463336e0e2ec0bfe45b0d4151"
-    },
-    {
-      "date": 1686027600085,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-06-06-11-success.log",
-      "hash": "0bd26db5c495c1f25ed6851c12facced5c5bedd35e7d3df0f60b906bc6b35982"
-    },
-    {
-      "date": 1686236008341,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-08-06-20-success.log",
-      "hash": "30599d05e473f4debc14cb4a31ddc09d571ab1af6de8214032f83ad5e4d1d052"
-    },
-    {
-      "date": 1686238313750,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-08-06-21-success.log",
-      "hash": "35d63f0d19db26c3ab2bbd399af81b02877bc14871690186452df11aa8383c27"
-    },
-    {
-      "date": 1686242090716,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-08-06-22-success.log",
-      "hash": "ca9bc0fc141c43a02e78a94b3af06a68f90745bc21ef0f9afdbbab760f43ffff"
-    },
-    {
-      "date": 1686243848871,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-08-06-23-success.log",
-      "hash": "61ed08e91d9f3890df140d3291b3d6dc896801a2a052bcc56cabc10b5b256be2"
-    },
-    {
-      "date": 1686305834459,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-09-06-16-success.log",
-      "hash": "0c5db9b4f86dc793795c4175c39606e016469d3b0bd787e017cbacb32b539a81"
-    },
-    {
-      "date": 1686336906306,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-10-06-00-success.log",
-      "hash": "8b83c7a6c8458239e22a8ee27b614e4e7a08f77aaff7a17a89080df63fa09388"
-    },
-    {
-      "date": 1686337259033,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-10-06-01-success.log",
-      "hash": "1c958be9f1f2aa61c000d9618ec77fdc0dbd0644911535aaf0b097a2334cccfd"
-    },
-    {
-      "date": 1686381163757,
-      "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-10-06-13-success.log",
-      "hash": "004c98d42958a9aff65f9dade05a5d7bf2a0d72ea463d57ee54a2965ed181e2c"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\.307bc2373857fef141368122ccce3f9720df0d6c-audit.json",
+    "files": [
+        {
+            "date": 1685871365867,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-15-success.log",
+            "hash": "7dbb47f6713b24c3c11bf9e904b66cfa9daee2d5ee3de585e653b3c72dacdb08"
+        },
+        {
+            "date": 1685873090957,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-16-success.log",
+            "hash": "fe60a251c929dc5eca18bb2ac0b0f043a604a6162231880800da6c218cd853e5"
+        },
+        {
+            "date": 1685877837571,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-17-success.log",
+            "hash": "b247b86b46c47f4c5f1fd85845ae47c5e850fe2f383f7738773e28964d3cccd0"
+        },
+        {
+            "date": 1685880262276,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-04-06-18-success.log",
+            "hash": "dc1fbb380ca4d66a5b374da9f715b20487fe3821d7fd945a5b82ad57449294a7"
+        },
+        {
+            "date": 1685936020038,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-09-success.log",
+            "hash": "54666828f3034f32386ae7c508683c5b3a00e2bd25f3edc476079ce97a3536da"
+        },
+        {
+            "date": 1685937607567,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-10-success.log",
+            "hash": "8cc4a79c7774d008d44a9f4b42f614fb0d9695d1252b571a2e0b5a4034f04f01"
+        },
+        {
+            "date": 1685941510638,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-11-success.log",
+            "hash": "5f846a2d052756b8d37f44cdfbe11c373ffe110045a558b4d600f06535fcfca7"
+        },
+        {
+            "date": 1685946933198,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-05-06-12-success.log",
+            "hash": "533c2daf79392343bdea5f5b8d1751a4d36966972da68301cdcbd5b1f0015595"
+        },
+        {
+            "date": 1686023237969,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-06-06-09-success.log",
+            "hash": "7cbdebac11f7c6e0fc8614731f3766bd74d6110448831d96da5d9240a867c614"
+        },
+        {
+            "date": 1686024587076,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-06-06-10-success.log",
+            "hash": "0d7007ed88ff6554b9b2121cee73275f9610535463336e0e2ec0bfe45b0d4151"
+        },
+        {
+            "date": 1686027600085,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-06-06-11-success.log",
+            "hash": "0bd26db5c495c1f25ed6851c12facced5c5bedd35e7d3df0f60b906bc6b35982"
+        },
+        {
+            "date": 1686236008341,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-08-06-20-success.log",
+            "hash": "30599d05e473f4debc14cb4a31ddc09d571ab1af6de8214032f83ad5e4d1d052"
+        },
+        {
+            "date": 1686238313750,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-08-06-21-success.log",
+            "hash": "35d63f0d19db26c3ab2bbd399af81b02877bc14871690186452df11aa8383c27"
+        },
+        {
+            "date": 1686242090716,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-08-06-22-success.log",
+            "hash": "ca9bc0fc141c43a02e78a94b3af06a68f90745bc21ef0f9afdbbab760f43ffff"
+        },
+        {
+            "date": 1686243848871,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-08-06-23-success.log",
+            "hash": "61ed08e91d9f3890df140d3291b3d6dc896801a2a052bcc56cabc10b5b256be2"
+        },
+        {
+            "date": 1686305834459,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-09-06-16-success.log",
+            "hash": "0c5db9b4f86dc793795c4175c39606e016469d3b0bd787e017cbacb32b539a81"
+        },
+        {
+            "date": 1686336906306,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-10-06-00-success.log",
+            "hash": "8b83c7a6c8458239e22a8ee27b614e4e7a08f77aaff7a17a89080df63fa09388"
+        },
+        {
+            "date": 1686337259033,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-10-06-01-success.log",
+            "hash": "1c958be9f1f2aa61c000d9618ec77fdc0dbd0644911535aaf0b097a2334cccfd"
+        },
+        {
+            "date": 1686381163757,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-10-06-13-success.log",
+            "hash": "004c98d42958a9aff65f9dade05a5d7bf2a0d72ea463d57ee54a2965ed181e2c"
+        },
+        {
+            "date": 1686391766798,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\successes\\phu-2023-10-06-16-success.log",
+            "hash": "3268e81d78d361600716470237a6a806a9fdbc03e65e35c49c43680c20bfaf6a"
+        }
+    ],
+    "hashType": "sha256"
 }
