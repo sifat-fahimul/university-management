@@ -46,7 +46,7 @@ const getSingleFaculties = catchAsync(async (req: Request, res: Response) => {
   const result = await AcademicFacultyService.getSingleFaculties(id);
 
   sendResponse<IAcademicFaculty>(res, {
-    statusCode: httpStatus.CREATED,
+    statusCode: httpStatus.OK,
     success: true,
     message: 'Academic faculty retrieved successfully!',
     data: result,
