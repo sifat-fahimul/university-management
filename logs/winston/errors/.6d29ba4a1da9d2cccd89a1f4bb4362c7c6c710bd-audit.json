@@ -114,6 +114,16 @@
             "date": 1686399383666,
             "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\errors\\phu-2023-10-06-18-error.log",
             "hash": "a4633c6ca03ccbf379a1dff4bf896072f8f74eb74aac0f8b247cccaa4bcb2925"
+        },
+        {
+            "date": 1686402055809,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\errors\\phu-2023-10-06-19-error.log",
+            "hash": "4aa203f92a4d44fb1211a1f9079c96482432dc9d8fcb348d1d80ff224e8ee79c"
+        },
+        {
+            "date": 1686414484575,
+            "name": "D:\\Sifat-Fahimul\\Level.2\\university-management\\logs\\winston\\errors\\phu-2023-10-06-22-error.log",
+            "hash": "d756ed5560537ad4c100247972fc05c5595ecbcadc314ca6186b2e33d2205b30"
         }
     ],
     "hashType": "sha256"

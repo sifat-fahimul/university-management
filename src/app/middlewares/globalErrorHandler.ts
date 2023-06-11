@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-unused-expressions */
-import { ErrorRequestHandler } from 'express';
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import config from '../../config';
 import { IGenericErrorMessage } from '../../interfaces/error';
 import handleValidationError from '../../errors/handleValidationError';
@@ -9,7 +10,12 @@ import { ZodError } from 'zod';
 import handleZodError from '../../errors/handleZodError';
 import handleCastError from '../../errors/handleCastError';
 
-const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
+const globalErrorHandler: ErrorRequestHandler = (
+  err,
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   config.env === 'development'
     ? console.log('globalErrorHandler', err)
     : errorLogger.error('globalErrorHandler', err);
@@ -48,7 +54,6 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
     errorMessage,
     stack: config.env !== 'production' ? err?.stack : undefined,
   });
-  next();
 };
 
 export default globalErrorHandler;
