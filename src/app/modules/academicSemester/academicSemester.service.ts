@@ -1,7 +1,7 @@
 import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import {
-  ACADEMIC_SEMESTER_TITLECODEMAPPER,
+  ACADEMIC_SEMESTER_TITLE_CODE_MAPPER,
   academicSemesterSearchableFields,
 } from './academicSemester.constant';
 import {
@@ -17,7 +17,7 @@ import { SortOrder } from 'mongoose';
 const createSemester = async (
   payload: IAcademicSemester
 ): Promise<IAcademicSemester> => {
-  if (ACADEMIC_SEMESTER_TITLECODEMAPPER[payload.title] !== payload.code) {
+  if (ACADEMIC_SEMESTER_TITLE_CODE_MAPPER[payload.title] !== payload.code) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid semester code');
   }
 
@@ -110,7 +110,7 @@ const updateSemester = async (
   if (
     payload.title &&
     payload.code &&
-    ACADEMIC_SEMESTER_TITLECODEMAPPER[payload.title] !== payload.code
+    ACADEMIC_SEMESTER_TITLE_CODE_MAPPER[payload.title] !== payload.code
   ) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid semester code');
   }
