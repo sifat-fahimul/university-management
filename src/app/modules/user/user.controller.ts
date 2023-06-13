@@ -16,4 +16,16 @@ const createStudent = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-export const UserController = { createStudent };
+const createFaculty = catchAsync(async (req: Request, res: Response) => {
+  const { faculty, ...userData } = req.body;
+  const result = await UserService.createFaculty(faculty, userData);
+
+  sendResponse(res, {
+    statusCode: httpStatus.CREATED,
+    success: true,
+    message: 'faculty created successfully!',
+    data: result,
+  });
+});
+
+export const UserController = { createStudent, createFaculty };
