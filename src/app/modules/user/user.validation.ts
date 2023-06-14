@@ -24,7 +24,7 @@ const createUserZodSchema = z.object({
       emergencyContactNo: z.string({
         required_error: 'Emergency Contact No is required',
       }),
-      bloodGroup: z.enum([...BLOOD_GROUP] as [string, ...string[]]),
+      bloodGroup: z.enum([...BLOOD_GROUP] as [string, ...string[]]).optional(),
       presentAddress: z.string({
         required_error: 'Present address is required',
       }),
@@ -109,7 +109,7 @@ const createFacultyZodSchema = z.object({
       permanentAddress: z.string({
         required_error: 'Permanent address is required',
       }),
-      bloodGroup: z.enum([...BLOOD_GROUP] as [string, ...string[]]),
+      bloodGroup: z.enum([...BLOOD_GROUP] as [string, ...string[]]).optional(),
       designation: z.enum([...DESIGNATION] as [string, ...string[]]),
       academicDepartment: z.string({
         required_error: 'Academic department is required',
@@ -123,5 +123,51 @@ const createFacultyZodSchema = z.object({
   }),
 });
 
-export const UserValidation = { createUserZodSchema, createFacultyZodSchema };
+const createAdminZodSchema = z.object({
+  body: z.object({
+    password: z.string().optional(),
+    admin: z.object({
+      name: z.object({
+        firstName: z.string({
+          required_error: 'First name is required',
+        }),
+        middleName: z.string().optional(),
+        lastName: z.string({
+          required_error: 'Last name is required',
+        }),
+      }),
+      gender: z.enum([...GENDER] as [string, ...string[]]),
+      dateOfBirth: z.string({
+        required_error: 'Date of birth is required',
+      }),
+      email: z.string({ required_error: 'Email is required' }).email(),
+      contactNo: z.string({ required_error: 'Contact No is required' }),
+      emergencyContactNo: z.string({
+        required_error: 'Emergency Contact No is required',
+      }),
+
+      presentAddress: z.string({
+        required_error: 'Present address is required',
+      }),
+      permanentAddress: z.string({
+        required_error: 'Permanent address is required',
+      }),
+      bloodGroup: z.enum([...BLOOD_GROUP] as [string, ...string[]]).optional(),
+      designation: z.string({
+        required_error: 'Designation is required',
+      }),
+      managementDepartment: z.string({
+        required_error: 'Management department is required',
+      }),
+
+      profileImage: z.string().optional(),
+    }),
+  }),
+});
+
+export const UserValidation = {
+  createUserZodSchema,
+  createFacultyZodSchema,
+  createAdminZodSchema,
+};
 //   await createUserZodSchema.parseAsync(req);
