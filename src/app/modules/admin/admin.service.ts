@@ -2,13 +2,14 @@
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import { IGenericResponse } from '../../../interfaces/common';
 import { paginationHelper } from '../../../helpers/paginationHelper';
-import { SortOrder } from 'mongoose';
+import mongoose, { SortOrder } from 'mongoose';
 
 import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
 import { IAdmin, IAdminFilters } from './admin.interface';
 import { Admin } from './admin.model';
 import { adminSearchableFields } from './admin.constant';
+import { User } from '../user/user.model';
 
 const getAllAdmin = async (
   filters: IAdminFilters,
@@ -90,10 +91,32 @@ const updateAdmin = async (
 };
 
 const deleteAdmin = async (id: string): Promise<IAdmin | null> => {
-  const result = await Admin.findByIdAndDelete(id).populate(
-    'managementDepartment'
-  );
-  return result;
+  // check if the faculty is exist
+  const isExist = await Admin.findOne({ id });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Admin not found !');
+  }
+
+  const session = await mongoose.startSession();
+
+  try {
+    session.startTransaction();
+    //delete student first
+    const admin = await Admin.findOneAndDelete({ id }, { session });
+    if (!admin) {
+      throw new ApiError(404, 'Failed to delete admin');
+    }
+    //delete user
+    await User.deleteOne({ id });
+    session.commitTransaction();
+    session.endSession();
+
+    return admin;
+  } catch (error) {
+    session.abortTransaction();
+    throw error;
+  }
 };
 
 export const AdminService = {

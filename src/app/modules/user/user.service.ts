@@ -28,7 +28,7 @@ const createStudent = async (
 
   const academicSemester = await AcademicSemester.findById(
     student.academicSemester
-  );
+  ).lean();
   let newUserAllData = null;
   const session = await mongoose.startSession();
   try {
