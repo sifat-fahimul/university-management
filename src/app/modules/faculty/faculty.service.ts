@@ -2,13 +2,14 @@
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import { IGenericResponse } from '../../../interfaces/common';
 import { paginationHelper } from '../../../helpers/paginationHelper';
-import { SortOrder } from 'mongoose';
+import mongoose, { SortOrder } from 'mongoose';
 
 import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
 import { IFaculty, IFacultyFilters } from './faculty.interface';
 import { facultySearchableFields } from './faculty.constant';
 import { Faculty } from './faculty.model';
+import { User } from '../user/user.model';
 
 const getAllFaculty = async (
   filters: IFacultyFilters,
@@ -97,10 +98,32 @@ const updateFaculty = async (
 };
 
 const deleteFaculty = async (id: string): Promise<IFaculty | null> => {
-  const result = await Faculty.findByIdAndDelete(id)
-    .populate('academicFaculty')
-    .populate('academicDepartment');
-  return result;
+  // check if the faculty is exist
+  const isExist = await Faculty.findOne({ id });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Faculty not found !');
+  }
+
+  const session = await mongoose.startSession();
+
+  try {
+    session.startTransaction();
+    //delete faculty first
+    const faculty = await Faculty.findOneAndDelete({ id }, { session });
+    if (!faculty) {
+      throw new ApiError(404, 'Failed to delete faculty');
+    }
+    //delete user
+    await User.deleteOne({ id });
+    session.commitTransaction();
+    session.endSession();
+
+    return faculty;
+  } catch (error) {
+    session.abortTransaction();
+    throw error;
+  }
 };
 
 export const FacultyService = {
