@@ -1,7 +1,7 @@
 import express from 'express';
 import { validateRequest } from '../../middlewares/validateRequest';
 import { AcademicDepartmentValidation } from './academicDepartment.validation';
-import { AcademicDepartmentController } from './academicDepartment.contoller';
+import { AcademicDepartmentController } from './academicDepartment.controller';
 import auth from '../../middlewares/auth';
 import { ENUM_USER_ROLE } from '../../../enums/user';
 
